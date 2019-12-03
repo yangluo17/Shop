@@ -30,9 +30,9 @@ export default {
   props: ["max"],
   watch: {
     // 属性监听
-    'max': function (newVal, oldVal) {
+    max: function (newVal, oldVal) {
       // 使用JS API设置numbox的最大值
-      mui(".mui-numbox").numbox().setOption('max', newVal);
+      mui(".mui-numbox").numbox().setOption("max", newVal);
     }
   }
 }

@@ -8,8 +8,8 @@
       :value="initcount"
       @change="countChanged"
       ref="numbox"
-      readonly
     />
+    <!--       :max="goodsinfo.stock_quantity" -->
     <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
   </div>
 </template>

@@ -113,6 +113,13 @@ export default {
         color: red;
         font-weight: bold;
       }
+      h1 {
+        text-align: center;
+      }
+      p {
+        white-space: nowrap;
+        text-align: center;
+      }
     }
   }
   .jiesuan {

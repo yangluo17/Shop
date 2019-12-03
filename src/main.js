@@ -30,6 +30,7 @@ var store = new Vuex.Store({
             state.car.some(item => {
                 if (item.id == goodsinfo.id) {
                     item.count += parseInt(goodsinfo.count)
+                    flag = true
                     return true
                 }
             })
