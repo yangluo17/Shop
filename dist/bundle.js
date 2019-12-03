@@ -38880,7 +38880,6 @@ exports.default = {
 //
 //
 //
-//
 
 /***/ }),
 /* 175 */
@@ -39854,9 +39853,9 @@ exports.default = {
   props: ["max"],
   watch: {
     // 属性监听
-    'max': function max(newVal, oldVal) {
+    max: function max(newVal, oldVal) {
       // 使用JS API设置numbox的最大值
-      (0, _mui2.default)(".mui-numbox").numbox().setOption('max', newVal);
+      (0, _mui2.default)(".mui-numbox").numbox().setOption("max", newVal);
     }
   }
 }; //
@@ -40094,6 +40093,7 @@ var store = new _vuex2.default.Store({
             state.car.some(function (item) {
                 if (item.id == goodsinfo.id) {
                     item.count += parseInt(goodsinfo.count);
+                    flag = true;
                     return true;
                 }
             });
@@ -44415,7 +44415,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.shopcar-container[data-v-21acea58] {\n  background-color: #eee;\n  overflow: hidden;\n}\n.shopcar-container .goods-list .mui-card-content-inner[data-v-21acea58] {\n    display: flex;\n    align-items: center;\n}\n.shopcar-container .goods-list img[data-v-21acea58] {\n    width: 60px;\n    height: 60px;\n}\n.shopcar-container .goods-list h1[data-v-21acea58] {\n    font-size: 13px;\n}\n.shopcar-container .goods-list .info[data-v-21acea58] {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\n.shopcar-container .goods-list .info .price[data-v-21acea58] {\n      color: red;\n      font-weight: bold;\n}\n.shopcar-container .jiesuan[data-v-21acea58] {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n.shopcar-container .jiesuan .red[data-v-21acea58] {\n      color: red;\n      font-weight: bold;\n      font-size: 16px;\n}\n", ""]);
+exports.push([module.i, "\n.shopcar-container[data-v-21acea58] {\n  background-color: #eee;\n  overflow: hidden;\n}\n.shopcar-container .goods-list .mui-card-content-inner[data-v-21acea58] {\n    display: flex;\n    align-items: center;\n}\n.shopcar-container .goods-list img[data-v-21acea58] {\n    width: 60px;\n    height: 60px;\n}\n.shopcar-container .goods-list h1[data-v-21acea58] {\n    font-size: 13px;\n}\n.shopcar-container .goods-list .info[data-v-21acea58] {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\n.shopcar-container .goods-list .info .price[data-v-21acea58] {\n      color: red;\n      font-weight: bold;\n}\n.shopcar-container .goods-list .info h1[data-v-21acea58] {\n      text-align: center;\n}\n.shopcar-container .goods-list .info p[data-v-21acea58] {\n      white-space: nowrap;\n      text-align: center;\n}\n.shopcar-container .jiesuan[data-v-21acea58] {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n.shopcar-container .jiesuan .red[data-v-21acea58] {\n      color: red;\n      font-weight: bold;\n      font-size: 16px;\n}\n", ""]);
 
 // exports
 
@@ -45372,7 +45372,7 @@ var render = function() {
       _c("input", {
         ref: "numbox",
         staticClass: "mui-input-numbox",
-        attrs: { id: "test", type: "number", readonly: "" },
+        attrs: { id: "test", type: "number" },
         domProps: { value: _vm.initcount },
         on: { change: _vm.countChanged }
       }),
@@ -45517,9 +45517,7 @@ var render = function() {
           1
         )
       ])
-    ]),
-    _vm._v(" "),
-    _c("p", [_vm._v(_vm._s(_vm.$store.getters.getGoodsSelected))])
+    ])
   ])
 }
 var staticRenderFns = []
